@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://font/slkscre.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://menuShader.tres" type="Material" id=2]
+[ext_resource path="res://art/sci_fi/Interface_Vector/InfoEmbs.svg" type="Texture" id=3]
+[ext_resource path="res://ui/TextEdit.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 8
+extra_spacing_top = -2
+font_data = ExtResource( 1 )
+
+[node name="Telos_TextBox" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+material = ExtResource( 2 )
+position = Vector2( 99, 7.5 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 6, 22, 198, 15 )
+
+[node name="TextEdit" type="TextEdit" parent="."]
+margin_left = 2.0
+margin_top = 1.5
+margin_right = 196.0
+margin_bottom = 13.5
+custom_fonts/font = SubResource( 1 )
+caret_blink = true
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

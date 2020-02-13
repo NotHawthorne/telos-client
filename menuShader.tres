@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[ext_resource path="res://menu.shader" type="Shader" id=1]
+
+[resource]
+shader = ExtResource( 1 )
+shader_param/from_color = Color( 0, 0.541176, 0.462745, 1 )
+shader_param/to_color = Color( 0, 0, 0, 0 )
